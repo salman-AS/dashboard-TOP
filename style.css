@@ -1,3 +1,139 @@
 * {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #f0f9ff;
+    margin: 0px;
+    border: 1px solid rgb(255, 217, 0);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.sidepanel {
+    color: #ffffff;
+    background-color: #075985;
+    border: 1px solid rgb(43, 255, 0);
+    grid-area: 1/1/-1/2;
+}
+
+.headerContainer {
+    border: 1px solid rgb(0, 183, 255);
+    grid-area: 1/2/2/-1;
+}
+
+.projectContainer {
+    border: 1px solid rgb(4, 0, 255);
+    grid-area: 2/2/-1/-2;
+}
+
+.misc {
+    border: 1px solid rgb(153, 0, 255);
+    grid-area: 2/-2/-1/-1;
+}
+
+.titleSidepanel {
+    font-size: 2.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-weight: bold;
+
+    img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(104%) contrast(104%);
+        width: 4em;
+        height: auto;
+        position: relative;
+        top: 1em;
+    }
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 1em;
+
+    li {
+        padding: 1em 3em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(104%) contrast(104%);
+            width: 2em;
+            height: auto;
+            padding: 0em 0.5em;
+        }
+    }
+}
+
+.headerContainer {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+height: 172.5px;
+    .searchbar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 3em;
+
+        .search {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 2.5em;
+                height: auto;
+                padding: 0em 1em;
+            }
+
+            input {
+                height: 2em;
+                font-size: 1em;
+                padding: 5px 20px;
+                width: 45em;
+                outline: none;
+                background: #CBD5E1;
+                color: #000000;
+                border: 0px solid #CBD5E1;
+                border-radius: 17px;
+                transition: .3s ease;
+            }
+        }
+
+        .rightdiv {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .bell {
+                width: 2.5em;
+                height: auto;
+                padding: 0em 1em;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+                .pic {
+                    padding: 0em;
+                    width: 5em;
+                    height: auto;
+                    border-radius: 50%;
+                }
+
+                p {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
 }
